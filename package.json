@@ -1,0 +1,33 @@
+{
+  "name": "jsyg-canvas",
+  "version": "0.0.2",
+  "description": "Few canvas features for JSYG framework",
+  "main": "JSYG.Canvas.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/YannickBochatay/JSYG.Canvas.git"
+  },
+  "keywords": [
+    "svg",
+    "jquery",
+    "javascript",
+    "library"
+  ],
+  "author": "Yannick Bochatay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YannickBochatay/JSYG.Canvas/issues"
+  },
+  "homepage": "https://github.com/YannickBochatay/JSYG.Canvas#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "jsyg": "^0.6.7",
+    "jsyg-color": "^0.1.4"
+  }
+}

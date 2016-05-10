@@ -3,11 +3,14 @@
 
 (function(factory) {
     
-    if (typeof define != "undefined" && define.amd) define("jsyg-canvas",["jsyg"],factory);
-    else if (typeof JSYG != "undefined") factory(JSYG);
-    else throw new Error("JSYG is needed");
+    if (typeof module == "object" && typeof module.exports == "object") {
+      module.exports = factory( require("jsyg"), require("jsyg-color") );
+    }
+    else if (typeof define != "undefined" && define.amd) define("jsyg-canvas",["jsyg","jsyg-color"],factory);
+    else if (typeof JSYG != "undefined" && typeof JSYG.Color != "undefined") factory(JSYG,JSYG.Color);
+    else throw new Error("JSYG and JSYG.Color are needed");
     
-})(function(JSYG) {
+})(function(JSYG,Color) {
     
     "use strict";
     
@@ -233,9 +236,7 @@
      * @returns {Canvas}
      */
     Canvas.prototype.toGrayScale = function() {
-        
-        if (!JSYG.Color) throw new Error("JSYG.Color is needed for this feature");
-        
+                
         var width = parseInt(this.attr("width"),10),
         height = parseInt(this.attr("height"),10),
         imageData = this.ctx.getImageData(0,0,width,height),
@@ -244,7 +245,7 @@
         color;
         
         for(;i<N;i+=4) {
-            color = new JSYG.Color({r:data[i],g:data[i+1],b:data[i+2]});
+            color = new Color({r:data[i],g:data[i+1],b:data[i+2]});
             data[i] = data[i+1] = data[i+2] = color.brightness();
         }
         
