@@ -1,6 +1,6 @@
 {
   "name": "jsyg-canvas",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Few canvas features for JSYG framework",
   "main": "JSYG.Canvas.js",
   "directories": {

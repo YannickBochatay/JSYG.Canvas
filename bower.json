@@ -4,6 +4,7 @@
     "description" : "Few canvas features for JSYG framework",
     "main": "JSYG.Canvas.js",
     "moduleType": [
+        "node",
         "amd",
         "globals"
     ],
