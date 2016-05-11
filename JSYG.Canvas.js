@@ -84,7 +84,10 @@
                 
                 return promise;
             
-            case 'url' : return Promise.resolve( node.toDataURL('image/'+format,quality) );
+            case 'url' :
+            case 'dataURL' :
+              
+                return Promise.resolve( node.toDataURL('image/'+format,quality) );
             
             case 'html' :
             case 'svg' :
