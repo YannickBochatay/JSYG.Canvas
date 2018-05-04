@@ -1,6 +1,6 @@
 {
   "name": "jsyg-canvas",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Few canvas features for JSYG framework",
   "main": "JSYG.Canvas.js",
   "directories": {
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/YannickBochatay/JSYG.Canvas#readme",
   "devDependencies": {},
   "dependencies": {
-    "jsyg": ">0.0.0",
-    "jsyg-color": ">0.0.0"
+    "jsyg": "^1.0.2",
+    "jsyg-color": "^1.0.0"
   }
 }

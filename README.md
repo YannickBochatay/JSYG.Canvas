@@ -5,15 +5,8 @@ Few canvas features for [JSYG framework](https://github.com/YannickBochatay/JSYG
 [http://yannickbochatay.github.io/JSYG.Canvas/](http://yannickbochatay.github.io/JSYG.Canvas/)
 
 ### Installation
-
-##### with npm
 ```shell
 npm install jsyg-canvas
-```
-
-##### with bower
-```shell
-bower install jsyg-canvas
 ```
 
 ### Example with es6 bundler

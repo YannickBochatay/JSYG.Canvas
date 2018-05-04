@@ -8,11 +8,6 @@
         <script src="node_modules/jsyg/dist/JSYG.js"></script>
         <script src="node_modules/jsyg-color/JSYG.Color.js"></script>
         <script src="JSYG.Canvas.js"></script>
-        <style>
-            div#content,div#result {
-                
-            }
-        </style>
     </head>
     <body>
         
@@ -56,7 +51,7 @@
             
             function loadSVG() {
                 
-                return getXML("examples/example.svg").then(function(data) {
+                return getXML("example.svg").then(function(data) {
                     svg = data;
                     new JSYG("#content").append(svg);
                     return svg;
